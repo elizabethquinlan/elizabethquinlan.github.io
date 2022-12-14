@@ -2,7 +2,7 @@
 
 A personal portfolio made by yours truly. Demonstrates my skills as a fullstack developer using GitHub pages, HTML, and CSS.
 
-You are here right now: [Project Link](https://github.com/elizabethquinlan/elizabethquinlan.github.io)
+View the Project [here](https://elizabethquinlan.github.io/).
 
 ## Info to Include
 
