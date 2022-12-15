@@ -39,10 +39,18 @@ section {
     flex-direction: column;
 }
 
+#top>h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0
+}
+
 .small-img {
     display: flex;
     align-self: center;
-    width: 20vh;
+    margin-bottom: 1rem;
+
+    width: 25vh;
     height: auto;
     border-radius: 50%;
 }
