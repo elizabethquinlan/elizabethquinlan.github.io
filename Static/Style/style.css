@@ -2,13 +2,14 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Palatino, "Timew New Roman", serif;
 }
 
 main {
     width: 100%;
     height: 100vh;
     overflow: auto;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -82,8 +83,9 @@ nav {
     position: absolute;
     display: flex;
     flex-direction: row;
-    font-family: 'Comfortaa', cursive;
-    font-size: .75rem;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 nav ul {
@@ -95,9 +97,63 @@ nav ul {
 }
 
 nav li a {
+    color: black;
     text-decoration: none;
     font-weight: 600;
     padding: 10px;
+}
+
+section:nth-child(1) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(145, 163, 198, 0),
+        rgb(145 163 198)
+        );
+        color: white;
+}
+
+section:nth-child(2) li a {
+    color: white;
+}
+
+section:nth-child(2) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(167, 214, 250, 0),
+        rgb(167 214 250)
+        );
+        color: black;
+}
+
+section:nth-child(3) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(199 77 118)
+        );
+    color: white;
+}
+
+section:nth-child(4) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(13 28 86)
+        );
+    color: white;
+}
+
+section:nth-child(5) li a {
+    color: white;
+}
+
+section:nth-child(5) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(190 196 238)
+        );
+    color: black;
 }
 
 .centerholder {
@@ -163,13 +219,4 @@ section:nth-child(5) {
 .align-right {
     float: right;
     padding-right: 2rem;
-}
-
-#style-1::-webkit-scrollbar {
-	width: 6px;
-	background-color: #F5F5F5;
-}
-
-#style-1::-webkit-scrollbar-thumb {
-	background-color: #000000;
 }
