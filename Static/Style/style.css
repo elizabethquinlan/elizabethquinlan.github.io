@@ -74,6 +74,18 @@ section {
     font-weight: bold;
 }
 
+figure {
+    transition: .5s;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillrow {
+    display: flex;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -186,6 +198,15 @@ section:nth-child(5) .navcurrent {
 .centerholder {
     display: flex;
     justify-content: center;
+}
+
+.centerholder>h1 {
+    margin: 1rem 0 0 0;
+}
+
+.skill-icon {
+    margin-top: 0;
+    padding-bottom: 2rem;
 }
 
 ul {
