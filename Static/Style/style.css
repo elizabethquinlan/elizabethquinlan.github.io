@@ -38,6 +38,14 @@ section {
     flex-direction: column;
 }
 
+.small-img {
+    display: flex;
+    align-self: center;
+    width: 20vh;
+    height: auto;
+    border-radius: 50%;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -90,7 +98,6 @@ nav li a {
     text-decoration: none;
     font-weight: 600;
     padding: 10px;
-
 }
 
 .centerholder {
@@ -156,4 +163,13 @@ section:nth-child(5) {
 .align-right {
     float: right;
     padding-right: 2rem;
+}
+
+#style-1::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+	background-color: #000000;
 }
