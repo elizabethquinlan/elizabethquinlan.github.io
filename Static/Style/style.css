@@ -1,3 +1,4 @@
+/* FIX THIS LATER???? */
 body {
     margin: 0;
     padding: 0;
@@ -37,6 +38,37 @@ section {
     flex-direction: column;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+    margin-top: 1rem;
+    background-color: rgb(202 135 87);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+}
+
+.info-card>h4 {
+    margin-bottom: 0;
+}
+
+.info-card:hover {
+    background-color: rgba(255, 192, 203, 0.546);
+}
+
+.info-card:hover>hr {
+    background-color: rgb(199 77 118)
+}
+
+.info-card>hr {
+    height: 2px;
+    border-width: 0;
+    background-color: rgb(186 96 52)
+}
+
 nav {
     bottom: -1px;
     position: absolute;
@@ -52,6 +84,13 @@ nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+
 }
 
 .centerholder {
@@ -112,4 +151,9 @@ section:nth-child(5) {
         rgb(20 26 79) 90%,
         rgb(11 14 61) 100%
       )
+}
+
+.align-right {
+    float: right;
+    padding-right: 2rem;
 }
