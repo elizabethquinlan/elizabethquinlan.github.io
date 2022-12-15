@@ -5,6 +5,10 @@ body {
     font-family: Palatino, "Timew New Roman", serif;
 }
 
+p {
+    font-size: 17px;
+}
+
 main {
     width: 100%;
     height: 100vh;
@@ -53,6 +57,21 @@ section {
     width: 25vh;
     height: auto;
     border-radius: 50%;
+}
+
+#hobbies {
+    display: flex;
+    justify-content: center;
+}
+
+#hobbies>p {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.accent-color {
+    color: rgb(13 28 86);
+    font-weight: bold;
 }
 
 .card-container {
@@ -145,8 +164,8 @@ section:nth-child(3) .navcurrent {
 section:nth-child(4) .navcurrent {
     background-image: linear-gradient(
         to bottom,
-        rgba(199, 77, 118, 0),
-        rgb(13 28 86)
+        rgba(37, 40, 80, 0),
+        rgb(37 40 80)
         );
     color: white;
 }
@@ -217,10 +236,10 @@ section:nth-child(4) {
 section:nth-child(5) {
     background-image: linear-gradient(
         to bottom,
-        rgb(13 28 86) 20%,
-        rgb(33 54 97) 90%,
-        rgb(20 26 79) 90%,
-        rgb(11 14 61) 100%
+        rgb(37 40 80) 20%,
+        rgb(68 61 92) 90%,
+        rgb(86 69 107) 90%,
+        rgb(70 54 101) 100%
       )
 }
 
