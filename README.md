@@ -4,19 +4,11 @@ A personal portfolio made by yours truly. Demonstrates my skills as a fullstack 
 
 View the Project [here](https://elizabethquinlan.github.io/).
 
-## Info to Include
+## Includes:
 
 - Name
 - Profile image
 - Short bio
 - Skills
 - Work history
-
-## Features to Include
-
-- Fontawesome icons + links to socials
-- Custom favicon
-- Color scheme
-- Responsive design
-- Sticky header or nav
-- Embedded PDF of CV/resumé?
+— Contact information
