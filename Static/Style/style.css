@@ -87,6 +87,10 @@ figure {
     display: flex;
 }
 
+.info-card>p {
+    font-size: .7rem;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -125,7 +129,7 @@ nav {
     flex-direction: row;
     text-transform: capitalize;
     padding: 10px;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 nav ul {
@@ -148,6 +152,16 @@ nav li a {
     padding: 10px;
 }
 
+section:nth-child(5) li a:hover,
+section:nth-child(2) li a:hover, 
+a:hover {
+    color: rgb(199 77 118);
+}
+
+section:nth-child(4) li a:hover {
+    color: rgb(200 178 174)
+}
+
 section:nth-child(1) .navcurrent {
     background-image: linear-gradient(
         to bottom,
@@ -158,7 +172,8 @@ section:nth-child(1) .navcurrent {
 }
 
 
-section:nth-child(2) .navcurrent {
+section:nth-child(2) .navcurrent,
+section:nth-child(2) .navcurrent:hover {
     background-image: linear-gradient(
         to bottom,
         rgba(167, 214, 250, 0),
@@ -176,7 +191,8 @@ section:nth-child(3) .navcurrent {
     color: white;
 }
 
-section:nth-child(4) .navcurrent {
+section:nth-child(4) .navcurrent,
+section:nth-child(4) .navcurrent:hover {
     background-image: linear-gradient(
         to bottom,
         rgba(37, 40, 80, 0),
@@ -185,7 +201,8 @@ section:nth-child(4) .navcurrent {
     color: white;
 }
 
-section:nth-child(5) .navcurrent {
+section:nth-child(5) .navcurrent,
+section:nth-child(5) .navcurrent:hover {
     background-image: linear-gradient(
         to bottom,
         rgba(199, 77, 118, 0),
@@ -222,9 +239,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(199 77 118);
-}
 
 section:nth-child(1) {
     background-image: linear-gradient(
@@ -278,6 +292,23 @@ section:nth-child(5) {
 }
 
 .align-right {
-    float: right;
+    padding-left: .5rem;
     padding-right: 2rem;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 641px) {
+    nav {
+        font-size: 1rem;
+    }
+
+    .align-right {
+        float: right;
+        padding-right: 2rem;
+    }
+
+    .info-card>p {
+        font-size: 1rem;
+    }
+
 }
