@@ -140,75 +140,11 @@ nav ul {
     padding: 0px;
 }
 
-section:nth-child(5) li a,
-section:nth-child(2) li a {
-    color: white;
-}
-
 nav li a {
     color: black;
     text-decoration: none;
     font-weight: 600;
     padding: 10px;
-}
-
-section:nth-child(5) li a:hover,
-section:nth-child(2) li a:hover, 
-a:hover {
-    color: rgb(199 77 118);
-}
-
-section:nth-child(4) li a:hover {
-    color: rgb(200 178 174)
-}
-
-section:nth-child(1) .navcurrent {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(145, 163, 198, 0),
-        rgb(145 163 198)
-        );
-        color: white;
-}
-
-
-section:nth-child(2) .navcurrent,
-section:nth-child(2) .navcurrent:hover {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(167, 214, 250, 0),
-        rgb(167 214 250)
-        );
-        color: black;
-}
-
-section:nth-child(3) .navcurrent {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(199, 77, 118, 0),
-        rgb(199 77 118)
-        );
-    color: white;
-}
-
-section:nth-child(4) .navcurrent,
-section:nth-child(4) .navcurrent:hover {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(37, 40, 80, 0),
-        rgb(37 40 80)
-        );
-    color: white;
-}
-
-section:nth-child(5) .navcurrent,
-section:nth-child(5) .navcurrent:hover {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(199, 77, 118, 0),
-        rgb(190 196 238)
-        );
-    color: black;
 }
 
 #contact {
@@ -240,6 +176,19 @@ a {
 }
 
 
+/* Changes the color of the other sections, including on hover */
+section:nth-child(6) li a,
+section:nth-child(2) li a {
+    color: white;
+}
+
+section:nth-child(6) li a:hover,
+section:nth-child(2) li a:hover, 
+a:hover {
+    color: rgb(199 77 118);
+}
+
+
 section:nth-child(1) {
     background-image: linear-gradient(
         to bottom,
@@ -251,6 +200,16 @@ section:nth-child(1) {
       )
 }
 
+section:nth-child(1) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(145, 163, 198, 0), /* Transparent to blue gradient */
+        rgb(145 163 198)
+        );
+        color: white;
+}
+
+
 section:nth-child(2) {
     background-image: linear-gradient(
         to bottom,
@@ -261,15 +220,36 @@ section:nth-child(2) {
       )
 }
 
+section:nth-child(2) .navcurrent,
+section:nth-child(2) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(167, 214, 250, 0),
+        rgb(167 214 250)
+        );
+        color: black;
+}
+
+
 section:nth-child(3) {
     background-image: linear-gradient(
         to bottom,
         rgb(167 214 250) 20%,
-        rgb(170 198 204) 90%,
+        rgb(177, 212, 220) 90%,
         rgb(127 174 187) 90%,
         rgb(95 143 151) 100%
       )
 }
+
+section:nth-child(3) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(199 77 118)
+        );
+    color: white;
+}
+
 
 section:nth-child(4) {
     background-image: linear-gradient(
@@ -281,7 +261,42 @@ section:nth-child(4) {
       )
 }
 
+section:nth-child(4) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(199 77 118)
+        );
+    color: white;
+}
+
+
 section:nth-child(5) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(199 77 118) 20%,
+        rgb(202 135 87) 90%,
+        rgb(186 96 52) 90%,
+        rgb(151 69 42) 100%
+      )
+}
+
+section:nth-child(5) li a:hover {
+    color: rgb(200 178 174)
+}
+
+section:nth-child(5) .navcurrent,
+section:nth-child(5) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(37, 40, 80, 0),
+        rgb(37 40 80)
+        );
+    color: white
+}
+
+
+section:nth-child(6) {
     background-image: linear-gradient(
         to bottom,
         rgb(37 40 80) 20%,
@@ -290,6 +305,17 @@ section:nth-child(5) {
         rgb(70 54 101) 100%
       )
 }
+
+section:nth-child(6) .navcurrent,
+section:nth-child(6) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(190 196 238)
+        );
+    color: black;
+}
+
 
 .align-right {
     padding-left: .5rem;
