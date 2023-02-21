@@ -178,11 +178,13 @@ a {
 
 /* Changes the color of the other sections, including on hover */
 section:nth-child(6) li a,
+section:nth-child(5) li a,
 section:nth-child(2) li a {
     color: white;
 }
 
 section:nth-child(6) li a:hover,
+section:nth-child(5) li a:hover,
 section:nth-child(2) li a:hover, 
 a:hover {
     color: rgb(199 77 118);
@@ -261,29 +263,31 @@ section:nth-child(4) {
       )
 }
 
-section:nth-child(4) .navcurrent {
+section:nth-child(4) .navcurrent,
+section:nth-child(4) .navcurrent:hover {
     background-image: linear-gradient(
         to bottom,
         rgba(199, 77, 118, 0),
-        rgb(199 77 118)
+        rgb(120 56 105)
         );
     color: white;
+}
+
+section:nth-child(4) li a:hover {
+    color: rgb(200 178 174)
 }
 
 
 section:nth-child(5) {
     background-image: linear-gradient(
         to bottom,
-        rgb(199 77 118) 20%,
-        rgb(202 135 87) 90%,
-        rgb(186 96 52) 90%,
-        rgb(151 69 42) 100%
+        rgb(120 56 105) 20%,
+        rgb(123 93 82) 90%,
+        rgb(107 59 53) 90%,
+        rgb(98 48 46) 100%
       )
 }
 
-section:nth-child(5) li a:hover {
-    color: rgb(200 178 174)
-}
 
 section:nth-child(5) .navcurrent,
 section:nth-child(5) .navcurrent:hover {
