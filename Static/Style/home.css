@@ -1,0 +1,360 @@
+/* FIX THIS LATER???? */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Palatino, "Timew New Roman", serif;
+}
+
+p {
+    font-size: 17px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    background-color: rgb(243, 224, 205);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fullpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 20px 20px 40px 20px;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#top>h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0
+}
+
+.small-img {
+    display: flex;
+    align-self: center;
+    margin-bottom: 1rem;
+
+    width: 25vh;
+    height: auto;
+    border-radius: 50%;
+}
+
+#hobbies {
+    display: flex;
+    justify-content: center;
+}
+
+#hobbies>p {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.accent-color {
+    color: rgb(13 28 86);
+    font-weight: bold;
+}
+
+figure {
+    transition: .5s;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillrow,
+.contactrow {
+    display: flex;
+}
+
+.info-card>p {
+    font-size: .7rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+    margin-top: 1rem;
+    background-color: rgb(202 135 87);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+}
+
+.info-card>h4 {
+    margin-bottom: 0;
+}
+
+.info-card:hover {
+    background-color: rgba(255, 192, 203, 0.546);
+}
+
+.info-card:hover>hr {
+    background-color: rgb(199 77 118)
+}
+
+.info-card>hr {
+    height: 2px;
+    border-width: 0;
+    background-color: rgb(186 96 52)
+}
+
+nav {
+    bottom: -1px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: .8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#contact {
+    color: rgb(167 214 250);
+    text-align: center;
+}
+
+.centerholder {
+    display: flex;
+    justify-content: center;
+}
+
+.centerholder>h1 {
+    margin: 1rem 0 0 0;
+}
+
+.skill-icon {
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+
+ul {
+    display: block;
+}
+
+a {
+    color:rgb(167 214 250);
+    text-decoration: none;
+}
+
+
+/* Changes the color of the other sections, including on hover */
+section:nth-child(6) li a,
+section:nth-child(5) li a,
+section:nth-child(2) li a {
+    color: white;
+}
+
+section:nth-child(6) li a:hover,
+section:nth-child(5) li a:hover,
+section:nth-child(2) li a:hover, 
+a:hover {
+    color: rgb(199 77 118);
+}
+
+
+section:nth-child(1) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(190 196 238) 20%,
+        /* Just move the 90% if you want the breakpoint for the graident line to go elsewhere. */
+        rgb(241 166 139) 90%,
+        rgb(217 147 131) 90%,
+        rgb(178 139 148) 100%
+      )
+}
+
+section:nth-child(1) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(145, 163, 198, 0), /* Transparent to blue gradient */
+        rgb(145 163 198)
+        );
+        color: white;
+}
+
+
+section:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(145 163 198) 20%,
+        rgb(200 178 174) 90%,
+        rgb(161 154 153) 90%,
+        rgb(123 129 135) 100%
+      )
+}
+
+section:nth-child(2) .navcurrent,
+section:nth-child(2) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(167, 214, 250, 0),
+        rgb(167 214 250)
+        );
+        color: black;
+}
+
+
+section:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(167 214 250) 20%,
+        rgb(177, 212, 220) 90%,
+        rgb(127 174 187) 90%,
+        rgb(95 143 151) 100%
+      )
+}
+
+section:nth-child(3) .navcurrent {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(199 77 118)
+        );
+    color: white;
+}
+
+
+section:nth-child(4) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(199 77 118) 20%,
+        rgb(202 135 87) 90%,
+        rgb(186 96 52) 90%,
+        rgb(151 69 42) 100%
+      )
+}
+
+section:nth-child(4) .navcurrent,
+section:nth-child(4) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(120 56 105)
+        );
+    color: white;
+}
+
+section:nth-child(4) li a:hover {
+    color: rgb(200 178 174)
+}
+
+
+section:nth-child(5) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(120 56 105) 20%,
+        rgb(123 93 82) 90%,
+        rgb(107 59 53) 90%,
+        rgb(98 48 46) 100%
+      )
+}
+
+
+section:nth-child(5) .navcurrent,
+section:nth-child(5) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(37, 40, 80, 0),
+        rgb(37 40 80)
+        );
+    color: white
+}
+
+
+section:nth-child(6) {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(37 40 80) 20%,
+        rgb(68 61 92) 90%,
+        rgb(86 69 107) 90%,
+        rgb(70 54 101) 100%
+      )
+}
+
+section:nth-child(6) .navcurrent,
+section:nth-child(6) .navcurrent:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(199, 77, 118, 0),
+        rgb(190 196 238)
+        );
+    color: black;
+}
+
+
+.align-right {
+    padding-left: .5rem;
+    padding-right: 2rem;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 641px) {
+    nav {
+        font-size: 1rem;
+    }
+
+    .align-right {
+        float: right;
+        padding-right: 2rem;
+    }
+
+    .info-card>p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 1rem;
+    }
+
+}
