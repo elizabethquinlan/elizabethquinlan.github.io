@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Palatino, "Timew New Roman", serif;
+    background-color: rgb(41, 71, 41);
 }
 
 p {
@@ -13,6 +14,11 @@ p {
     box-sizing: border-box;
 }
 
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
 #navbar {
     overflow: hidden;
     display: flex;
@@ -21,11 +27,6 @@ p {
     align-items: flex-start;
     background-color: black;
     color: white;
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
 }
 
 .navbar-links {
@@ -93,7 +94,7 @@ p {
     padding-top: 60px;
 }
 
-
+/* Image sizes */
 img {
     width: 60px;
     height: 60px;
@@ -104,32 +105,34 @@ img {
     margin-right: auto;
 }
 
-main {
-    width: 100%;
-    height: 100vh;
-}
-
-.container {
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-#top>h1 {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0
-}
-
-.small-img {
+.lrg-img {
     display: flex;
     align-self: center;
     margin-bottom: 1rem;
 
-    width: 25vh;
+    min-width: 45vh;
     height: auto;
     border-radius: 50%;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#top>h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0
+}
+
+.about-me-wrapper {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    background-color: white;
 }
 
 #hobbies {
@@ -142,44 +145,9 @@ main {
     padding-right: 2rem;
 }
 
-.accent-color {
-    color: rgb(13 28 86);
-    font-weight: bold;
-}
 
-figure {
-    transition: .5s;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.skillrow,
-.contactrow {
-    display: flex;
-}
 
-.info-card>p {
-    font-size: .7rem;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-card {
-    margin-top: 1rem;
-    background-color: rgb(202 135 87);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 20px;
-}
-
-.info-card>h4 {
-    margin-bottom: 0;
-}
 
 /* Media query for tablet */
 @media screen and (min-width: 641px) {
