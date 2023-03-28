@@ -121,7 +121,8 @@ img {
 }
 
 /* sections wrappers */
-.about-me-wrapper, .skills-wrapper {
+.about-me-wrapper, .skills-wrapper,
+.projects-wrapper, .resume-wrapper, .contact-wrapper {
     padding: 2rem 2rem;
     background-color: blue;
 }
