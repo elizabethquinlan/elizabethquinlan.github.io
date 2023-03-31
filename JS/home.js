@@ -22,3 +22,12 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// document.addEventListener('click', event => {
+//   // If the clicked element is not a child of #sideNav..
+//   if (event.target.closest("#navbar") === null) {
+//     // ..then close navigation..
+//     // { your code here }
+//     navbar.classList.remove("sticky")
+//   }
+// });
