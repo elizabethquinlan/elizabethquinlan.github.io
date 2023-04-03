@@ -136,7 +136,6 @@ img {
 .about-me-wrapper, .skills-wrapper,
 .projects-wrapper, .resume-wrapper, .contact-wrapper {
     padding: 2rem;
-    background-color: blue;
 }
 
 /* About me section */
@@ -180,11 +179,14 @@ img {
     background-color: white;
     display: flex;
     width: 100%;
+    height: auto;
     flex-direction: column;
+
+    gap: 1rem;
+    align-items: center;
 }
 
 #projects > h1 {
-    padding-left: 2rem;
     padding-top: 2rem;
 }
 
@@ -192,8 +194,48 @@ img {
     margin: 0px;
     padding: 0px;
     background-color: pink;
-    width: 100%;
+    width: 300px;
     height: 400px;
+    border: 2px solid red;
+    border-radius: 2rem;
+}
+
+.project-img {
+    width: 100%;    /* width: clamp(1.5rem, 50vw, 4rem) */
+    height: 200px;
+    object-fit: cover;
+
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.project-info {
+    padding-left: 1rem;
+}
+
+.tags, .project-sites {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .8rem;
+}
+
+.tags p, .project-sites p {
+    display: inline-block;
+    background-color: purple;
+    padding: 10px;
+    margin: 0px;
+    margin-right: .5rem;
+
+    font-size: 14px;
+}
+
+.tags p {
+    margin-bottom: .3rem;
+    border-radius: 1rem;
+}
+
+.project-sites p {
+    border-radius: 10px;
 }
 
 /* Experience section */
@@ -230,7 +272,6 @@ img {
 }
 
 .contact-item {
-    align-items: center;
     border: 2px solid black;
     border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0.333);
@@ -282,6 +323,12 @@ img {
     
     .lrg-img {
         width: 320px;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
