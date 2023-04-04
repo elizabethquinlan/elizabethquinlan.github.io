@@ -172,6 +172,7 @@ img {
 /* skills section */
 .skills-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Projects section */
@@ -323,6 +324,30 @@ img {
     
     .lrg-img {
         width: 320px;
+    }
+
+    .iframe-container {
+        width: 80%;
+    }
+
+    .resume-wrapper, .about-me-wrapper, .skills-container,
+    .skills-learning-container,  .contact-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .projects-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .resume-wrapper h1, .about-me-wrapper h1, 
+    .skills-container h1, .contact-wrapper h1,
+    .projects-wrapper h1 {
+        color: white;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
     }
 
     .contact-container {
