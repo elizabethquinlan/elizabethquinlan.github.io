@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Palatino, "Timew New Roman", serif;
-    background-color: rgb(41, 71, 41);
 }
 
 p {
@@ -100,6 +99,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1; /* Makes this the priority over the pdf iframe lower on in the webpage. */
 }
 
 .sticky + .content {
@@ -206,16 +206,17 @@ img {
     width: 300px;
     height: 400px;
     border: 2px solid red;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
 }
 
 .project-img {
     width: 100%;    /* width: clamp(1.5rem, 50vw, 4rem) */
     height: 200px;
     object-fit: cover;
+    object-position: top;
 
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    /* border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; */
 }
 
 .project-info {
@@ -254,6 +255,7 @@ img {
     width: 100%;
     height: 60vh;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    z-index: 0;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -304,9 +306,9 @@ img {
 /* Media query for tablet */
 @media screen and (min-width: 641px) {
 
-    * {
+    /* * {
         background-color: rgba(0, 0, 0, 0.3);
-    }
+    } */
 
     .intro-wrapper {
         height: 600px;
@@ -365,7 +367,7 @@ img {
 
 /* media query for desktop */
 @media screen and (min-width: 1008px) {
-    * {
+    /* * {
         background-color: rgb(83, 79, 79);
-    }
+    } */
 }
