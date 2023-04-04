@@ -175,16 +175,24 @@ img {
     flex-wrap: wrap;
 }
 
+.skills-row img {
+    margin: 1rem;
+}
+
 /* Projects section */
 .projects-wrapper {
-    background-color: white;
     display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
-    flex-direction: column;
 
     gap: 1rem;
-    align-items: center;
 }
 
 #projects > h1 {
@@ -330,21 +338,19 @@ img {
         width: 80%;
     }
 
-    .resume-wrapper, .about-me-wrapper, .skills-container,
-    .skills-learning-container,  .contact-wrapper {
+    .resume-wrapper, .about-me-wrapper, .skills-wrapper,
+     .contact-wrapper {
         display: flex;
         gap: 1rem;
     }
 
     .projects-wrapper {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .resume-wrapper h1, .about-me-wrapper h1, 
-    .skills-container h1, .contact-wrapper h1,
-    .projects-wrapper h1 {
+    .contact-wrapper h1, .projects-wrapper h1,
+    .skills-header {
         color: white;
         writing-mode: vertical-rl;
         text-orientation: mixed;
