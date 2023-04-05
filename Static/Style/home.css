@@ -363,6 +363,10 @@ img {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    .projects-container {
+        justify-content: space-evenly;
+    }
 }
 
 /* media query for desktop */
