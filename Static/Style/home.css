@@ -33,7 +33,7 @@ nav {
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    background-color: black;
+    background-color: #3b1d52;
     color: white;
 }
 
@@ -139,33 +139,33 @@ img {
     border-radius: 50%;
 }
 
-/* sections wrappers */
-.about-me-wrapper, .skills-wrapper,
-.projects-wrapper, .resume-wrapper, 
-.contact-wrapper, .footer-wrapper {
-    padding: 2rem;
-    padding-top: 4rem;
-}
-
 /* Intro wrapper */
 .intro-wrapper {
-    height: 500px;
+    width: 100%;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 6rem;
+    background-color: #784e96;
 }
 
 #top>h1 {
     color: white;
     font-size: 3rem;
     margin-top: 1rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
 }
 
 /* About me section */
 .about-me-wrapper {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 #hobbies {
@@ -278,9 +278,9 @@ img {
 }
 
 /* Contact Me section */
-.contact-wrapper {
+/* .contact-wrapper {
     background-color: orange;
-}
+} */
 
 .contact-container, .contact-item {
     display: flex;
@@ -325,16 +325,24 @@ footer {
     gap: .5rem;
 }
 
+/* sections wrappers */
+.about-me-wrapper, .skills-wrapper,
+.projects-wrapper, .resume-wrapper, 
+.contact-wrapper, .footer-wrapper {
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: #8E62AD;
+}
 
 /* Media query for tablet */
 @media screen and (min-width: 641px) {
 
-    /* * {
-        background-color: rgba(0, 0, 0, 0.3);
-    } */
+    * {
+        background-color: #C299DD;
+    }
 
     .intro-wrapper {
-        height: 600px;
+        height: 700px;
     }
 
     .toggle-button {
