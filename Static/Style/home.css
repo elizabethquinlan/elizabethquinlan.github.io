@@ -19,7 +19,12 @@ a {
 
 .brand-title {
     font-size: 1.5rem;
-    margin: .5rem;
+    margin: 1rem;
+    margin-top: 0px;
+}
+
+nav {
+    padding-top: 10px;
 }
 
 #navbar {
@@ -142,17 +147,13 @@ img {
     padding-top: 4rem;
 }
 
-/* About me section */
-.about-me-wrapper {
-    margin-top: 5rem;
-}
-
+/* Intro wrapper */
 .intro-wrapper {
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 #top>h1 {
@@ -160,6 +161,11 @@ img {
     font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 0
+}
+
+/* About me section */
+.about-me-wrapper {
+    margin-top: 5rem;
 }
 
 #hobbies {
