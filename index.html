@@ -7,338 +7,206 @@
     <title>Lizzie Quinlan</title>
     <link rel="icon" type="image/x-icon" href="Static/Images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="Static/Style/home.css">
+    <script src="JS/home.js" defer></script>
     <script src="https://kit.fontawesome.com/0cc09580ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
+        
         <section>
-            <div class="fullpage"> 
-                <div id="top" class="container">
-                    <img src="Static/Images/lizzie_quinlan.jpeg" class="small-img" alt="A photo of Lizzie Quinlan in a crisp white dress shirt.">
-                    <h1>Enthusiastic.</h1>
-                    <h1>Creative.</h1>
-                    <h1>Lizzie.</h1>
-                </div>
-                <nav>
+            <nav id="navbar">
+                <div class="brand-title"><a href="#"><i class="fa-solid fa-house fa-lg"></i></a></div>
+                <button type="button" class="toggle-button">
+                    <!-- represent three lines of hamburger menu -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="navbar-links">
                     <ul>
-                        <li>
-                            <a href="#top" class="navcurrent">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact-me">Contact me</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </section>
 
-        <section>
-            <div class="fullpage"> 
-                <div id="bio" class="container">
+        <div class="intro-wrapper">
+            <div>
+                <img src="Static/Images/lizzie_quinlan.jpeg" class="lrg-img" alt="A photo of Lizzie Quinlan in a crisp white dress shirt.">
+            </div>
+            <div id="top">
+                <h1>Enthusiastic.</h1>
+                <h1>Creative.</h1>
+                <h1>Lizzie.</h1>
+            </div>
+            <div class="clouds">
+                <img src="Static/Images/cloud1.png" style="--i:1;">
+                <img src="Static/Images/cloud2.png" style="--i:2;">
+                <img src="Static/Images/cloud3.png" style="--i:3;">
+                <img src="Static/Images/cloud4.png" style="--i:4;">
+                <img src="Static/Images/cloud5.png" style="--i:5;">
+            </div>
+        </div>
+
+        <div class="about-me-wrapper" id="about-me">
+            <h1>About Me</h1>
+            <div class="about-me-container">
+                <article>
+                    <p>It's nine in the morning.</p>
+                    <p></p>I've just booted up VSCode and am clicking back through my repo, glancing down at the wireframe I sketched onto copy paper on my clipboard last night. I open my index.html page with Live Server and watch it pop open on Chrome. Spotify plays and I'm feeling good. It's going to be another productive day.</p>
                     <p>
                         I'm a <span class="accent-color">front-end web developer</span> and artist with a keen eye for detail, clear web layout, and appealing designs.
                     </p>
                     <p>
-                        In college, I learned that code was a highly <span class="accent-color">coveted and versatile</span> skill. But it wasn't until I graduated and had worked as an editor for a year that I decided I needed a life change.
+                        In college, I learned that coding was a highly <span class="accent-color">coveted and versatile</span> skill. But it wasn't until I graduated and had worked as an editor for a year that I decided I needed a life change.
                     </p>
+                    <p> Last October, I enrolled in a 16-week coding bootcamp and hopped my way through daily lessons about various programs and frameworks with labs that helped me apply my knowledge.</p>
                     <p>
                         Projects that allow me to <span class="accent-color">express myself</span> excite me. My hands are never idle when there's something new I could be creating!
                     </p>
-                    <div id="hobbies">
-                        <p><i class="fa-solid fa-paintbrush fa-xl"></i></p>
-                        <p><i class="fa-solid fa-book fa-xl"></i></p>
-                        <p><i class="fa-solid fa-gamepad fa-xl"></i></p>
+                </article>
+                <div id="hobbies">
+                    <p><i class="fa-solid fa-paintbrush fa-xl"></i></p>
+                    <p><i class="fa-solid fa-book fa-xl"></i></p>
+                    <p><i class="fa-solid fa-gamepad fa-xl"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-wrapper" id="skills">
+            <h1 class="skills-header">Skills</h1>
+            <div class="skills-container">
+                <div class="skills-row">
+                    <img src="Static/Images/vue.js.png" alt="An icon of Vue2.">
+                    <img src="Static/Images/javascript.png" alt="A yellow icon of Javascript.">
+                    <img src="Static/Images/python.png" alt="An icon of Python.">
+                    <img src="Static/Images/django.png" alt="An icon of Djagno.">
+                    <img src="Static/Images/HTML.png" alt="An icon of HTML.">
+                    <img src="Static/Images/CSS.png" alt="An icon of CSS.">
+                    <img src="Static/Images/Figma.png" alt="An icon of Figma.">
+                </div>
+                <hr>
+                <div class="skills-learning-container">
+                    <h1>I'm Learning</h1>
+                    <div class="skills-row">
+                        <img src="Static/Images/react.png" alt="An icon of React.">
+                        <img src="Static/Images/bootstrap.png" alt="An icon of Django REST Framework.">
+                        <img src="Static/Images/django-rest-framework.jpeg" class="long-img" alt="An icon of Bootstrap.">
                     </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#top">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio" class="navcurrent">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </section>
-
-        <section>
-            <div class="fullpage"> 
-                <div id="skills" class="container">
-                    <div class="centerholder">
-                        <h1>I'm proficient in:</h1>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>CSS</p>
-                                <i class="fa-brands fa-css3-alt fa-2xl"></i>
-                            </figure>
-                        </div>
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>Python</p>
-                                <i class="fa-brands fa-python fa-2xl"></i>
-                            </figure>
-                        </div>
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>HTML</p>
-                                <i class="fa-brands fa-html5 fa-2xl"></i>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>Javascript</p>
-                                <i class="fa-brands fa-js fa-2xl"></i>
-                            </figure>
-                        </div>
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>Vue2</p>
-                                <i class="fa-brands fa-vuejs fa-2xl"></i> 
-                            </figure>
-                        </div>
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>Django</p>
-                                <i class="fa-solid fa-code fa-2xl"></i>
-                            </figure>
-                        </div>
-                    </div>
-                    <br \>
-                    <div class="centerholder">
-                        <h1>I'm learning:</h1>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p>Django REST Framework</p>
-                                <i class="fa-solid fa-code fa-2xl"></i>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#top">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="navcurrent">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+        </div>
         
-        <section>
-            <div class="fullpage"> 
-                <div id="projects" class="container">
-                    <div class="centerholder">
-                        <h1>Projects:</h1>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                    <div class="info-card">
-                                    <p>Titanium Typewriter</p>
-                                    <a href="http://lizquin.pythonanywhere.com/"><img src="Static/Images/writingapp.png" alt="An image of a vector-style fonuntain pen tip."></a>
+        <div id="projects">
+            <div class="projects-wrapper">
+                <h1>Projects</h1>
+                    <div class="projects-container">
+                        <div class="project">
+                            <div><img src="Static/Images/titanium-site.png" class="project-img" alt="An image of the writing app with a small calendar at the top showing circles of each date, from Tue 4 to Wed 29. The body of the text reads, This is a writing app I made for my final project at PDX Code Guild. It was pretty fun to work on and I learned a lot about making calls to my internal API. Although the models for this project are pretty simple, it covers the foundations of various relationships, including many to one between models. I want to work on making a better landing page for this site when users are logged out!">
+                            </div>
+                            <div class="project-info">
+                                <h3>Titanium Typewriter</h3>
+                                <div class="tags">
+                                    <p>Django REST Framework</p>
+                                    <p>Vue2</p>
+                                    <p>Javascript</p>
+                                    <p>Python</p>
                                 </div>
-                                </figure>
+                                <div class="project-sites">
+                                    <p><a href="https://github.com/elizabethquinlan/titanium-typewriter" target="_blank">Github Repo</a></p>
+                                    <p><a href="http://lizquin.pythonanywhere.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div><img src="Static/Images/story-site.png" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <h3>Story Nook</h3>
+                                <div class="tags">
+                                    <p>Responsive Design</p>
+                                    <p>Request Form</p>
+                                </div>
+                                <div class="project-sites">
+                                    <p><a href="form.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div><img src="Static/Images/plant-shop-site.png" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <h3>Plant Shop</h3>
+                                <div class="tags">
+                                    <p>Responsive Design</p>
+                                    <p>Landing Page</p>
+                                    <p>Grid</p>
+                                    <p>Flexbox</p>
+                                </div>
+                                <div class="project-sites">
+                                    <p><a href="shop.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div><img src="Static/Images/kpop-site.png" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <h3>Blog Site</h3>
+                                <div class="tags">
+                                    <p>Responsive Design</p>
+                                    <p>Flask</p>
+                                </div>
+                                <div class="project-sites">
+                                    <p><a href="blog.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i></a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="centerholder">
-                        <h1>Static pages:</h1>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <div class="info-card">
-                                    <p>Story Nook</p>
-                                    <a href="form.html"><img src="Static/Images/pen.png" alt="An image of a vector-style fonuntain pen tip."></a>
-                                </div>
-                            </figure>
-                            <figure class="skill-icon">
-                                <div class="info-card">
-                                    <p>Plant shop</p>
-                                    <a href="shop.html"><img src="Static/Images/leaf.jpeg" alt="An image of a stylized leaf."></a>
-                                </div>
-                            </figure>
-                            <figure class="skill-icon">
-                                <div class="info-card">
-                                    <p>Kpop Blog</p>
-                                    <a href="blog.html"><img src="Static/Images/blog.png" alt="An image of a set of curves on a pink background."></a>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-    
-    
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#top">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="navcurrent">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </section>
-
-        <section>
-            <div class="fullpage"> 
-                <div id="experience" class="container">
-                    <h1>Experience</h1>
-
-                    <div class="card-container">
-                        <div class="info-card">
-                            <h4>Student, PDX Code Guild <span class="align-right">Present</span></h4>
-                            <hr \>
-                            <p>Full-stack, Python-based bootcamp with 500 hours of curriculum over 16 weeks.</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h4>Copy Editor, Arizona Daily Star <span class="align-right">2018-21</span></h4>
-                            <hr \>
-                            <p>Worked under daily deadlines while editing articles, meeting the needs of shifting priorities and workflows.</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h4>Alumna, University of Arizona <span class="align-right">2020</span></h4>
-                            <hr \>
-                            <p>Bachelor of Arts in Journalism, <em>Magna Cum Laude</em></p>
-                        </div>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#top">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience" class="navcurrent">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </nav>
+        </div>
+        
+        <div class="resume-wrapper" id="resume">
+            <h1>Experience</h1>
+            <div class="iframe-container">
+                <iframe class="responsive-iframe" src="Static/PDFs/Quinlan_Resume.pdf">
+                    <p>Your browser does not support iframes. View my resumé <a href="https://drive.google.com/file/d/1-ljaHtnDAF-dy-oAW4RCuBualMk14P13/view?usp=share_link">here:</a>https://drive.google.com/file/d/1-ljaHtnDAF-dy-oAW4RCuBualMk14P13/view?usp=share_link</p>
+                </iframe>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <div class="fullpage"> 
-                <div id="contact" class="container">
-                    <div>
-                        <h1>Contact Me:</h1>
-                        <p><a href="mailto:elizabeth.j.quinlan@gmail.com" target="_blank">elizabeth.j.quinlan@gmail.com</a></p>
-                    </div>
-                    <div class="centerholder">
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p><a href="https://www.linkedin.com/in/elizabeth-quinlan-/" target="_blank">LinkedIN</p>
-                                <i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                            </figure>
-                        </div>
-                        <div class="skillrow">
-                            <figure class="skill-icon">
-                                <p><a href="https://github.com/elizabethquinlan" target="_blank">Github</p>
-                                <i class="fa-brands fa-github fa-2xl"></i></a>
-                            </figure>
-                        </div>
-                    </div>
+        <div class="contact-wrapper" id="contact-me">
+            <h1>Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+                    <p>Email</p>
+                    <p>elizabeth.j.quinlan@gmail.com</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#top">top</a>
-                        </li>
-                        <li>
-                            <a href="#bio">bio</a>
-                        </li>
-                        <li>
-                            <a href="#skills">skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">projects</a>
-                        </li>
-                        <li>
-                            <a href="#experience">experience</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="navcurrent">contact</a>
-                        </li>
-                    </ul>
-                </nav>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <p>Github</p>
+                    <p>elizabethquinlan.github.io</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                    <p>LinkedIn</p>
+                    <p>linkedin.com/in/elizabeth-quinlan-/</p>
+                </div>
+                
             </div>
-        </section>
+        </div>
+
+        <!-- <footer class="footer-wrapper">
+            <p></p>
+        </footer> -->
     </main>
 </body>
 </html>
